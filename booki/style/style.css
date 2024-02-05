@@ -1,0 +1,695 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 3%;
+}
+header img{
+    height: 100px;
+    padding-top: 3%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-right: 3%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-top: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: white 2px solid;
+}
+nav a:hover{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+main{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+main .text1{
+    padding-bottom: 2%;
+}
+                 /* Barre de recherche  */
+.barre_recherche{
+    display: flex;
+    height: 50px;
+    width: auto;
+    margin-bottom: 3%;
+}
+.barre_recherche i{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+.barre_recherche input{
+    font-size: 20px;
+    padding-left: 10px;
+    border: 2px solid #F2F2F2;
+}
+.barre_recherche input::placeholder{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.barre_recherche button{
+    height: 50px;
+    width: 120px;
+    background-color: #0065FC;
+    color: #fff;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 0px 15px 15px 0px;
+}
+.barre_recherche div i{
+    display: none;
+}
+.barre_recherche button:hover{
+    background-color: #0053cf;
+}
+                 /* Filtre */
+.filtre{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.filtre button{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    border-radius: 50px;
+    border-color: #f2f2f2;
+    background-color: #fff;
+    font-size: large;
+    font-weight: 600;
+    align-items: center;
+    border: 2px solid #ececec;
+    border-left: none;
+}
+.filtre-button{
+    padding-left: 5%;
+}
+.filtre-button button{
+    margin-left: 5%;
+}
+.filtre button span{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.filtre i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    height: 45px;
+    min-width: 45px;
+    border-radius: 50%;
+}
+.filtre div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.filtre-button button:hover{
+    transition: all 0.3s;
+    flex-direction: row-reverse;
+    border-left: #F2F2F2 3px solid;
+    border-right: none;
+    background-color: #4e8ff0;
+}
+
+                /* Info bulle */
+.info-bulle{
+    display: flex;
+}
+.info-bulle i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 13px;
+    height: 20px;
+    width: 20px;
+    border: 1px #d4d3d3 solid;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.info-bulle p{
+    padding-top: 2px;
+}
+                /* Section1 */
+        /* herbergement marseille*/
+.section1{
+    display: flex;
+    justify-content: space-around;
+    height: 680px;
+}
+.section1 .article1 p{
+    padding-bottom: 2%;
+}
+.article1 .p0{
+    padding-top: 2%;
+}
+.article1{
+    background-color: #f2f2f2;
+    width: 60%;
+    border-radius: 25px;
+    padding: 2.5%;
+}
+.article1 aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2%;
+    height: 90%;
+}
+.artilce1 aside div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1%;
+    background-color: #fff;
+    height: 65%;
+}
+.article1 aside .vignette1{
+    border-radius: 15px 15px 15px 15px;
+    background-color: #fff;
+    margin-bottom: 2%;
+    width: 30%;
+    height: 50%;
+    box-shadow: rgb(146, 146, 146) 0.5px 0.5px 10px;
+}
+.article1 aside .vignette1 .p{
+    padding-left: 5%;
+    padding-top: 3%;
+    height: auto;
+}
+
+.p div{
+    display: flex;
+    margin-top: auto;
+    
+}
+.p div .star-color{
+    color: #e0e0e0;
+}
+.article1 aside div img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 65%;
+    padding: 5px;
+    border-radius: 15px 15px 0 0;
+}
+.p i{
+    color: #0065FC;
+}
+
+        /* les populaire*/
+.article2{
+    background-color: #f2f2f2;
+    width: 30%;
+    border-radius: 25px;
+    padding: 3%;
+}
+.article2 h3{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+.article2 aside{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 95%;
+}
+.article2 .vignette2{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 15px 15px 15px 15px;
+    padding: 1%;
+    height: 32%;
+    width: 100%;
+}
+.vignette2 img{
+    object-fit: cover;
+    object-position: center;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+.vignette2 .p1{
+    padding-left: 2%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.p1 div{
+    display: flex;
+    margin-top: auto;
+    padding-bottom: 3%;
+}
+.p1 div .star-color i{
+    color: #e0e0e0;
+}
+
+.p1 i{
+    color: #0065FC;
+}
+.vignette2 .p1 div .star-color{
+    color: #e0e0e0;
+}
+
+        /* Activiter a marseille */
+
+.section2{
+    margin-top: 5%;
+    padding: 3%;
+}
+.section2 h1{
+    padding-bottom: 2%;
+}
+.section2 .activite{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 550;
+    
+}
+.section2 .activite .solo{
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px #dbdbdb;
+    border-radius: 20px;
+    width: 22%;
+    box-shadow: 2px 2px 15px grey;
+}
+.section2 .activite .solo p{
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    height: 50px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+
+}
+.section2 .activite .solo img{
+    height: calc(100% - 50px);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:  center;
+}
+.section2 .activite .duo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 22%;
+    
+}
+.section2 .activite .duo .v1{
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px grey;
+    height: 50%;
+}
+.section2 .activite .duo .v1 p{
+    height: 50px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.section2 .activite .duo .v1 img{
+    height: calc(100% - 50px);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:  center;
+}
+.section2 .activite .duo .v2{
+    flex-direction: column;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: 2px 2px 15px grey;
+}
+.section2 .activite .duo .v2 p{
+    height: 50px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.section2 .activite .duo .v2 img{
+    height: calc(100% - 50px);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:  center;
+}
+.section2 .activite .duo .v3{
+    flex-direction: column;
+    border-radius: 20px;
+    height: 40%;
+    box-shadow: 2px 2px 15px grey;
+}
+.section2 .activite .duo .v3 p{
+    height: 50px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.section2 .activite .duo .v3 img{
+    height: calc(100% - 50px);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:  center;
+}
+.section2 .activite .duo .v4{
+    flex-direction: column;
+    border-radius: 20px;
+    height: 50%;
+    box-shadow: 2px 2px 15px grey;
+}
+.section2 .activite .duo .v4 p{
+    height: 50px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.section2 .activite .duo .v4 img{
+    height: calc(100% - 50px);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position:  center;
+}
+
+            /* Footer */
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 0.5%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+    width: 33.3%;
+}
+footer div h3{
+    padding-bottom: 10%;
+}
+footer div p{
+    padding-bottom: 5%;
+}
+            /* ---- version responsive ---- */
+@media all and ((max-width: 992px) and (min-width: 768px)) {
+    header, main{
+        margin: 0;
+        padding: 0;
+    }
+            /* Header */
+    header{
+        width: 100%;
+        justify-content: space-between;
+    }
+    header img{
+        padding-left: 2%;
+    }
+            /* main content */
+    main{
+        margin: 3%;
+    }
+            /* filtre */
+    .filtre{
+        display: flex;
+        padding: 0;
+    }
+    .filtre p{
+        font-weight: 700;
+        padding-bottom: 1%;
+    }
+    .filtre ,.filtre-button{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .filtre .filtre-button button{
+        margin-bottom: 1%;
+    }
+            /* section 2 */
+    .section2 .activite{
+        flex-wrap: wrap;
+    }
+    .section2 .activite .solo{
+        width: 30%;
+        height: 200px;
+    }
+    .section2 .activite .duo{
+        width: 64%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .section2 .activite .duo .v1{
+        height: 200px;
+        width: 45%;
+    }
+    .section2 .activite .duo .v2{
+        height: 200px;
+        width: 45%;
+    }
+    .section2 .activite .duo .v3{
+        height: 200px;
+        width: 45%;
+    }
+    .section2 .activite .duo .v4{
+        height: 200px;
+        width: 45%;
+    }
+    .vignette2 img{
+        max-height: 200px;
+    }
+
+    .section2{
+        padding: 2%;
+        border-radius: 24px;
+    }
+            /* section 1 */
+    .section1{
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+    }
+    .section1 .article1 ,.article2{
+        width: 100%;
+    }
+    .section1 .article1 aside .vignette1{
+        height: 300px;
+    }
+    .section1 .article2{
+        margin-top: 5%;
+        background-color: white;
+    }
+    .section1 .article2 .vignette2{
+        max-height: 300px;
+        box-shadow: rgb(172, 172, 172) 1px 1px 5px;
+    }
+}
+                /* ---- vesion mobile ---- */
+@media all and (max-width: 768px) {
+    header, main{
+        margin: 0;
+        padding: 0;
+    }
+                /* header */
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    header img{
+        height: 70px;
+        width: fit-content;
+        padding-left: 42%;
+    
+    }
+    nav{
+        padding-right: 0;
+    }
+    header nav a{
+        padding: 2%;
+        width: 50%;
+        text-align: center;
+        border-bottom: #dbdbdb 3px solid;
+    }
+    header nav a:hover{
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+    }
+                /* main content */
+    main .text1{
+        margin: 3%;
+    }
+                /* search bar */
+    main .barre_recherche{
+        margin: 3%;
+    }
+    .barre_recherche input{
+        font-size: 13px;
+        padding-left: 10px;
+        border: 2px solid #F2F2F2;
+        border-right: none;
+        width: calc(100% - 100px);
+        padding-top: 2%;
+    }
+    .barre_recherche input::placeholder{
+        padding-left: 3%;
+    }
+    .barre_recherche button{
+        display: none;
+    }
+
+    .barre_recherche div i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0065FC;
+        color: #fff;
+        border-radius: 0 15px 15px 0;
+    }
+
+                /* filtre */
+    .filtre{
+        margin: 5%;
+    }
+    .filtre p{
+        font-weight: 700;
+        padding-bottom: 1%;
+    }
+    .filtre ,.filtre-button{
+        flex-wrap: wrap;
+    }
+    .filtre div button{
+        margin-bottom: 2%;
+    }
+    .info-bulle{
+        padding-left: 5%;
+    }
+                /* section 1 */
+    .section1{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+                /* Hébergement marseille */
+    .article1{
+        width: 100%;
+        background-color: white;
+    }
+    .article1 h3{
+        font-size: 1.5rem;
+    }
+    .article1 aside{
+        flex-direction: column;
+    }
+    .article1 aside .vignette1{
+        width: 100%;
+        height: 250px;
+        box-shadow: rgb(146, 146, 146) 3px 3px 15px;
+    }
+    .article1 aside .vignette1 img{
+        min-height: calc(100% - 250px);
+    }
+    .article1 aside .vignette1 .p{
+        padding-left: 2%;
+        padding-top: 0.6%;
+    }
+                /* les populaire */
+    .article2{
+        width: 100%;
+        border-radius: 0;
+    }
+    .article2 .vignette2{
+        height: 200px;
+        box-shadow: rgb(189, 189, 189) 3px 3px 15px;
+    }
+    
+                    /* section 2 */
+                /* activiter a marseille */
+    .section2{
+        padding-bottom: 3%;
+    }
+    .section2 h1{
+        margin: 3%;
+    }
+    .section2 .activite{
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        }
+    .section2 .activite .solo{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2%;
+    }
+    .section2 .activite .duo{
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 5%;
+    }
+    .section2 .activite .duo .v1{
+        height: 200px;
+    }
+    .section .activite .duo .v1 p{
+        padding-top: 3%;
+    }
+    .section2 .activite .duo .v2{
+        height: 200px;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .section2 .activite .duo .v3{
+        height: 200px;
+    }
+    .section2 .activite .duo .v4{
+        height: 200px;
+        margin-top: 6%;
+    }
+                /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    footer div{
+        width: 100%;
+    }
+    footer div h3{
+        padding-bottom: 3%;
+    }
+    footer div p{
+        padding-bottom: 1%;
+    }
+}

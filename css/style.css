@@ -6,42 +6,36 @@
 }
 body{
     display: flex;
-    height: 100vh;
     background-color: #0F172A;
-    /*background: linear-gradient(135deg, #0F172A, #0734af);*/
     color: #fff;
-}
-body{
-    display: flex;
-    width: 100%;
+
 }
 /* --- partie de gauche --- */
-section{
-    width: 55%;
-    position: sticky;
+header{
+    width: 45%;
+    position: fixed;
     left: 0;
     top: 0;
 }
-section h1{
+header h1{
     font-size: 96px;
-    margin: 100px 135px 105px 140px;
+    margin: 100px 50px 20px 100px;
 }
-section div{
-    display: flex;
+.minidescription{
+    margin-left: 15%;
+    position: absolute;
+    width: 500px;
 }
-section div p{
-    margin: 0 170px 0 170px;
-    width: 60%;
-}
-section div nav{
-    width: 70px;
+nav{
+    width: 80px;
     text-align: end;
+    margin-left: 90%;
+    margin-top: 120px;
 }
 nav a{
     margin-bottom: 25px;
     text-decoration: none;
     color: #fff;
-    text-shadow: 5px 5px 5px#1b42af;
 }
 .icon{
     font-size: xx-large;
@@ -54,31 +48,47 @@ nav a{
     color: #fff;
 }
 hr{
-    position: absolute;
-    left: 54.5%;
+    position: fixed;
+    left: 45%;
     height: 75%;
     top: 12.5%;
 }
 /* --- Parti de droite ---*/
 main{
-    width: 45%;
-    height: 100%;
+    width: 54%;
     position: absolute;
     right: 0;
+}
+/* --- Propos.php ---*/
+.propo{
+    margin: 25% 20% 0 15%;
+}
+.skill{
+    margin: 2% 18% 25% 12%;
+}
+.skill-icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-icon div{
+    height: 200px;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.skill-icon div i{
+    font-size: 100px;
 }
 /* --- Project.php ---*/
 article{
-    width: 100%;
+    width: 75%;
     height: 100%;
-    position: absolute;
-    right: 0;
-}
-.article{
-    height: 65%;
     margin: 180px 80px 180px 80px;
-    overflow-y: scroll;
+    
 }
-.article div{
+article div{
     height: 130px;
     background-color: rgba(120, 166, 228, 0.192);
     border-radius: 30px;
@@ -86,34 +96,33 @@ article{
     margin: 25px;
     box-shadow: 2px 2px 10px rgba(120, 166, 228, 0.192);
 }
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: #6666668e;
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #172554;
-    border-radius: 50px;
-}
-.article div a{
+article div a{
     color: cadetblue;
     text-decoration: none;
 }
-.article div img{
+.suite{
+    padding-left: 10px;
+}
+article div img{
+    object-fit: cover;
+    object-position: center;
     height: 130px;
-    width: 130px;
-    border-radius: 30px;
+    width: 200px;
+    border-radius: 25px;
     float: left;
 }
-.article div p{
+article div p{
     max-height: 120px;
+    min-height: 120px;
     overflow: hidden;
     padding-left: 5px;
 }
+span{
+    color: #7ea5ff;
+}
 /* --- Contact.php --- */
 .contact{
-    margin-top: 25%;
-    margin-left: 25%;
+    margin: 15% 0 0 25%;
 }
 form {
     max-width: 400px;
@@ -149,4 +158,250 @@ input[type="submit"]:hover {
 input:focus,textarea:focus {
     border-color: #3498db;
     outline: none;
+}
+@media screen and (min-width: 1200px) and (max-width: 1900px){
+    header{
+        width: 55%;
+        position: sticky;
+        left: 0;
+        top: 0;
+    }
+    header h1{
+        font-size: 96px;
+        margin: 6% 7% 5% 8%;
+    }
+    header div{
+        display: flex;
+        justify-content: space-between;
+    }
+    header div p{
+        margin: 0 0 0 7%;
+        width: 60%;
+    }
+    header div nav{
+        width: 70px;
+        text-align: end;
+        margin: 0 1% 0 0;
+    }
+
+}
+@media screen and (min-width: 500px) and (max-width: 1500px){
+    body{
+        display: block;
+        flex-direction: column;
+        background-color: #0F172A;
+        color: #fff;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 85%;
+        position: sticky;
+        left: 0;
+        top: 0;
+    }
+    header h1{
+        font-size: 50px;
+        margin: 6% 20% 5% 20%;
+        display: flex;
+        justify-content: center;
+    }
+    header div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    header div p{
+        margin: 0 15% 0 15%;
+        width: 80%;
+    }
+    header div nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+    hr{
+        display: none;
+    }
+    .icon{
+        font-size: xx-large;
+        margin: 50px 200px 0 115px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon a{
+        color: #fff;
+    }
+    /* --- Parti de droite ---*/
+    main{
+        width: 100%;
+        height: 50%;
+        position: sticky;
+        top: 80%;
+    }
+    /* --- Contact.php --- */
+    .contact{
+        margin-top: 1px;
+        margin-bottom: 2%;
+    }
+    form {
+        max-width: 400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* --- Project.php ---*/
+    article{
+        width: 100%;
+        height: auto;
+    }
+    .article{
+        height: 100%;
+        margin: 10px 80px 10px 80px;
+    }
+    .article div{
+        height: 130px;
+        background-color: rgba(120, 166, 228, 0.192);
+        border-radius: 30px;
+        padding: 15px;
+        margin: 25px;
+        box-shadow: 2px 2px 10px rgba(120, 166, 228, 0.192);
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+    .article div a{
+        color: cadetblue;
+        text-decoration: none;
+    }
+    .article div img{
+        height: 130px;
+        width: 130px;
+        border-radius: 30px;
+        float: left;
+    }
+    .article div p{
+        max-height: 120px;
+        overflow: hidden;
+        padding-left: 5px;
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: #0F172A;
+        color: #fff;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 100%;
+        position: sticky;
+        left: 0;
+        top: 0;
+    }
+    header h1{
+        font-size: 30px;
+        margin: 6% 20% 5% 20%;
+        display: flex;
+        justify-content: center;
+    }
+    header div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header div p{
+        margin: 0 10% 0 10%;
+        width: 80%;
+    }
+    header div nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+    hr{
+        display: none;
+    }
+    .icon{
+        font-size: xx-large;
+        margin: 50px 200px 0 115px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon a{
+        color: #fff;
+    }
+    /* --- Parti de droite ---*/
+    main{
+        width: 100%;
+        height: 50%;
+        position: sticky;
+        top: 80%;
+    }
+    /* --- Contact.php --- */
+    .contact{
+        position: sticky;
+        margin-top: 1px;
+        margin-bottom: 2%;
+    }
+    form {
+        max-width: 400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* --- Project.php ---*/
+    article{
+        width: 100%;
+        height: auto;
+    }
+    .article{
+        height: 100%;
+        margin: 10px 80px 10px 80px;
+    }
+    .article div{
+        height: 130px;
+        background-color: rgba(120, 166, 228, 0.192);
+        border-radius: 30px;
+        padding: 15px;
+        margin: 25px;
+        box-shadow: 2px 2px 10px rgba(120, 166, 228, 0.192);
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+    .article div a{
+        color: cadetblue;
+        text-decoration: none;
+    }
+    .article div img{
+        height: 130px;
+        width: 130px;
+        border-radius: 30px;
+        float: left;
+    }
+    .article div p{
+        max-height: 120px;
+        overflow: hidden;
+        padding-left: 5px;
+    }
 }
