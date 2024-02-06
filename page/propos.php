@@ -18,7 +18,7 @@
     Explorez mon portfolio pour découvrir les projets sur lesquels j'ai travaillé, témoins de ma passion pour le développement web et ma capacité à relever de nouveaux défis. <br>
     Je suis ouvert à de nouvelles opportunités, alors n'hésitez pas à me contacter pour discuter de collaborations futures.
 </p>
-<div class="skill">
+<div class="skill page-content">
     <h2>Mes compétences</h2><br><br>
     <div class="skill-icon">
         <div><i class="fa-brands fa-java"></i><br><p>Java</p></div>

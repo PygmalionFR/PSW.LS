@@ -9,14 +9,16 @@
     <script src="https://kit.fontawesome.com/ba95712233.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="cursor-background"></div>
+    <div class="cursor-shadow"></div>
     <header>
         <h1>Ludovic Streetz</h1>
         <div class="minidescription">
             <h2>Formation</h2>
             <h3>Développeur Intégrateur Web</h3>
             <p>
-                Contrat d’apprentissage - Rythme : 3 semaines en entreprise / 1 semaine enécole
-                Formation éligible à l’Aide Exceptionnelle de 6000€
+                Contrat d'apprentissage - Rythme : 3 semaines en entreprise / 1 semaine enécole
+                Formation éligible à l'Aide Exceptionnelle de 6000€
             </p>
 
         </div>
@@ -31,7 +33,7 @@
         </div>
     </header>
     <hr>
-    <main>
+    <main class="page-container">
     <?php
         if (isset($_GET['page'])) {
             $page = $_GET['page'];
@@ -52,5 +54,11 @@
         }
         ?>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var pageContainer = document.querySelector('.page-container');
+            pageContainer.style.transform = 'translateX(0)';
+        });
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<div class="contact">
+<div class="contact page-content">
     <h1>Contact :</h1>
         <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
             <label>Nom :</label>
