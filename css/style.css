@@ -68,8 +68,11 @@ hr{
     padding: 20px;
 }
 /* --- Propos.php --- */
+.h2{
+    margin: 20% 15% 0 14%;
+}
 .propo{
-    margin: 25% 20% 0 15%;
+    margin: 25px 20% 0 15%;
 }
 .skill{
     margin: 2% 18% 25% 12%;
@@ -233,6 +236,12 @@ input:focus,textarea:focus {
     main{
         width: 55%;
     }
+    .h2{
+        margin: 20% 18% 0 12%;
+    }
+    .contact{
+        margin: 15% 0 0 20%;
+    }
 }
 @media screen and (min-width: 1000px) and (max-width: 1499px){
     body{
@@ -292,6 +301,12 @@ input:focus,textarea:focus {
     .page-content {
         padding: 20px;
     }
+    .h2{
+        margin: 25% 20% 0 20%;
+    }
+    .propo{
+        margin: 25px 20% 0 20%;
+    }
     article{
         width: 90%;
         height: 100%;
@@ -344,6 +359,9 @@ input:focus,textarea:focus {
         width: 100px;
         border-radius: 10px;
     }
+    .contact{
+        margin: 15% 0 0 15%;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 999px){
     body{
@@ -361,7 +379,6 @@ input:focus,textarea:focus {
         width: 91%;
         background-color: #0F172A;
     }
-
     hr{
         display: none;
     }
@@ -373,13 +390,24 @@ input:focus,textarea:focus {
         overflow: auto;
         position: relative;
     }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
     article{
         width: 90%;
         height: 100%;
         margin: 20px 20px 180px 20px; 
     }
+    .h2{
+        margin: 25px 20% 0 20%;
+    }
     .propo{
         margin: 25px 20% 0 20%;
+    }
+    .contact{
+        margin: 5% 25% 5% 25%;
     }
 
 }
