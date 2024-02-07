@@ -2,16 +2,16 @@
     <h1>Contact :</h1>
         <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
             <label>Nom :</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
 
             <label>Email : </label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" required>
 
             <label>Sujet :</label>
-            <input type="text" id="subject" name="subject">
+            <input type="text" id="subject" name="subject" required>
 
             <label>Votre message :</label>
-            <textarea name="message" id="message" placeholder="Message ..."></textarea>
+            <textarea name="message" id="message" placeholder="Message ..." required></textarea>
 
             <input class="submit" type="submit" name="send" value="Envoyer">
 
