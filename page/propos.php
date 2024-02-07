@@ -9,6 +9,7 @@
         $age--;
     }
 ?>
+<h2 class="propo">Des infos sur moi</h2>
 <p class="propo">
     Je m'appelle Ludovic Streetz, passionné de développement âgé de <?php echo $age; ?> ans. <br>Mon parcours a débuté de manière autodidacte grâce à des ressources telles qu'OpenClassroom et des tutoriels sur YouTube. <br>
     Aujourd'hui, je suis à l'aise les langages fondamentaux tels que HTML, CSS et PHP. Mon apprentissage ne s'arrête pas là ; actuellement, je suis en train d'approfondir mes connaissances en SQL et Python. <br>

@@ -5,24 +5,21 @@
     font-family: 'Baloo 2', sans-serif;
 }
 body{
+    width: 100%;
     display: flex;
     background-color: #0F172A;
     color: #fff;
 }
-
 /* --- partie de gauche --- */
 header{
     width: 45%;
-    position: fixed;
-    left: 0;
-    top: 0;
 }
 header h1{
     font-size: 96px;
     margin: 100px 50px 20px 100px;
 }
 .minidescription{
-    margin-left: 15%;
+    margin-left: 8%;
     position: absolute;
     width: 500px;
 }
@@ -57,8 +54,7 @@ hr{
     height: 75%;
     top: 12.5%;
 }
-/* --- Parti de droite ---*/
-
+/* --- Parti de droite --- */
 .page-container {
     width: 54%;
     position: absolute;
@@ -71,7 +67,7 @@ hr{
 .page-content {
     padding: 20px;
 }
-/* --- Propos.php ---*/
+/* --- Propos.php --- */
 .propo{
     margin: 25% 20% 0 15%;
 }
@@ -93,7 +89,7 @@ hr{
 .skill-icon div i{
     font-size: 100px;
 }
-/* --- Project.php ---*/
+/* --- Project.php --- */
 article{
     width: 75%;
     height: 100%;
@@ -136,7 +132,6 @@ article div p{
 }
 span{
     color: #7ea5ff;
-    padding-left: 20px;
 }
 .btn{
     display: flex;
@@ -187,249 +182,207 @@ input:focus,textarea:focus {
     border-color: #3498db;
     outline: none;
 }
-@media screen and (min-width: 1200px) and (max-width: 1900px){
+@media screen and (min-width: 1500px) and (max-width: 1900px){
+    body{
+        width: 100%;
+    }
     header{
-        width: 55%;
-        position: sticky;
-        left: 0;
-        top: 0;
+        width: 46%;
+        height: 100%;
+        flex-wrap: wrap;
     }
     header h1{
-        font-size: 96px;
-        margin: 6% 7% 5% 8%;
+        font-size: 4rem;
+        width: calc(100% - 25px);
+        margin: 25px 0 25px 25px;
+        
     }
-    header div{
-        display: flex;
-        justify-content: space-between;
+    header .minidescription{
+        margin: 15px 15px 15px 35px;
+        width: 35%;
     }
-    header div p{
-        margin: 0 0 0 7%;
-        width: 60%;
-    }
-    header div nav{
-        width: 70px;
+    nav{
         text-align: end;
-        margin: 0 1% 0 0;
+        margin-left: 88%;
+    }
+    nav a{
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #fff;
+    }
+    nav a:hover{
+        color: cadetblue;
+        
+    }
+    .icon{
+        font-size: xx-large;
+        margin: 50px 200px 0 115px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon a{
+        color: #fff;
+    }
+    hr{
+        position: fixed;
+        left: 46%;
+        height: 75%;
+        top: 12.5%;
+    }
+    main{
+        width: 55%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 46%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 65px 0 100px 0;
+    }
+    header h1{
+        font-size: 3rem;
+        width: calc(100% - 25px);
+        margin: 25px 0 25px 35px;
+    }
+    header .minidescription{
+        margin: 200px 105px 15px 45px;
+        width: 40%;
+        font-size: 0.8rem;
+    }
+    nav{
+        margin: 0 25px 0 40px;
+        display: flex;
+        justify-content: space-around;
+        width: 91%;
+    }
+    nav a{
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .icon{
+        font-size: xx-large;
+        margin: 150px 200px 0 15px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    hr{
+        position: fixed;
+        left: 46%;
+        height: 75%;
+        top: 12.5%;
+    }
+    main{
+        width: 55%;
+    }
+    .page-container {
+        width: 54%;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform 1s ease-in-out;
+        overflow: auto;
+    }
+    .page-content {
+        padding: 20px;
+    }
+    article{
+        width: 90%;
+        height: 100%;
+        margin: 180px 20px 180px 20px; 
+    }
+    article div{
+        height: 140px;
+        background-color: #162035;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 5px;
+    }
+    article div:hover{
+        background-color: rgba(120, 166, 228, 0.192);
+    }
+    article div a{
+        color: cadetblue;
+        text-decoration: none;
+    }
+    article div a:hover{
+        color: rgb(170, 16, 16)
+    }
+    .suite{
+        padding-left: 10px;
+    }
+    article div img{
+        object-fit: cover;
+        object-position: center;
+        height: 140px;
+        width: 150px;
+        border-radius: 15px;
+        float: left;
+    }
+    article div p{
+        max-height: 120px;
+        min-height: 120px;
+        overflow: hidden;
+        padding-left: 5px;
+    }
+    span{
+        color: #7ea5ff;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    article button{
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 999px){
+    body{
+        width: 100%;
+        display: block;
+    }
+    header{
+        width: 100%;
+    }
+    header h1{
+        font-size: 2.5rem;
+    }
+    nav{
+        margin: 0 25px 0 40px;
+        width: 91%;
+        background-color: #0F172A;
+    }
+
+    hr{
+        display: none;
+    }
+    .page-container {
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: transform 1s ease-in-out;
+        overflow: auto;
+        position: relative;
+    }
+    article{
+        width: 90%;
+        height: 100%;
+        margin: 20px 20px 180px 20px; 
+    }
+    .propo{
+        margin: 25px 20% 0 20%;
     }
 
 }
-@media screen and (min-width: 500px) and (max-width: 1500px){
-    body{
-        display: block;
-        flex-direction: column;
-        background-color: #0F172A;
-        color: #fff;
-        width: 100%;
-    }
-    header{
-        width: 100%;
-        height: 85%;
-        position: sticky;
-        left: 0;
-        top: 0;
-    }
-    header h1{
-        font-size: 50px;
-        margin: 6% 20% 5% 20%;
-        display: flex;
-        justify-content: center;
-    }
-    header div{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-    header div p{
-        margin: 0 15% 0 15%;
-        width: 80%;
-    }
-    header div nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 60%;
-        margin: 0 20% 0 20%;
-    }
-    hr{
-        display: none;
-    }
-    .icon{
-        font-size: xx-large;
-        margin: 50px 200px 0 115px;
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .icon a{
-        color: #fff;
-    }
-    /* --- Parti de droite ---*/
-    main{
-        width: 100%;
-        height: 50%;
-        position: sticky;
-        top: 80%;
-    }
-    /* --- Contact.php --- */
-    .contact{
-        margin-top: 1px;
-        margin-bottom: 2%;
-    }
-    form {
-        max-width: 400px;
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    /* --- Project.php ---*/
-    article{
-        width: 100%;
-        height: auto;
-    }
-    .article{
-        height: 100%;
-        margin: 10px 80px 10px 80px;
-    }
-    .article div{
-        height: 130px;
-        background-color: rgba(120, 166, 228, 0.192);
-        border-radius: 30px;
-        padding: 15px;
-        margin: 25px;
-        box-shadow: 2px 2px 10px rgba(120, 166, 228, 0.192);
-    }
-    ::-webkit-scrollbar{
-        display: none;
-    }
-    ::-webkit-scrollbar-thumb{
-        display: none;
-    }
-    .article div a{
-        color: cadetblue;
-        text-decoration: none;
-    }
-    .article div img{
-        height: 130px;
-        width: 130px;
-        border-radius: 30px;
-        float: left;
-    }
-    .article div p{
-        max-height: 120px;
-        overflow: hidden;
-        padding-left: 5px;
-    }
-}
-@media screen and (min-width: 50px) and (max-width: 500px){
-    body{
-        display: flex;
-        flex-direction: column;
-        background-color: #0F172A;
-        color: #fff;
-        width: 100%;
-    }
-    header{
-        width: 100%;
-        height: 100%;
-        position: sticky;
-        left: 0;
-        top: 0;
-    }
-    header h1{
-        font-size: 30px;
-        margin: 6% 20% 5% 20%;
-        display: flex;
-        justify-content: center;
-    }
-    header div{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        width: 100%;
-    }
-    header div p{
-        margin: 0 10% 0 10%;
-        width: 80%;
-    }
-    header div nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 60%;
-        margin: 0 20% 0 20%;
-    }
-    hr{
-        display: none;
-    }
-    .icon{
-        font-size: xx-large;
-        margin: 50px 200px 0 115px;
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .icon a{
-        color: #fff;
-    }
-    /* --- Parti de droite ---*/
-    main{
-        width: 100%;
-        height: 50%;
-        position: sticky;
-        top: 80%;
-    }
-    /* --- Contact.php --- */
-    .contact{
-        position: sticky;
-        margin-top: 1px;
-        margin-bottom: 2%;
-    }
-    form {
-        max-width: 400px;
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    /* --- Project.php ---*/
-    article{
-        width: 100%;
-        height: auto;
-    }
-    .article{
-        height: 100%;
-        margin: 10px 80px 10px 80px;
-    }
-    .article div{
-        height: 130px;
-        background-color: rgba(120, 166, 228, 0.192);
-        border-radius: 30px;
-        padding: 15px;
-        margin: 25px;
-        box-shadow: 2px 2px 10px rgba(120, 166, 228, 0.192);
-    }
-    ::-webkit-scrollbar{
-        display: none;
-    }
-    ::-webkit-scrollbar-thumb{
-        display: none;
-    }
-    .article div a{
-        color: cadetblue;
-        text-decoration: none;
-    }
-    .article div img{
-        height: 130px;
-        width: 130px;
-        border-radius: 30px;
-        float: left;
-    }
-    .article div p{
-        max-height: 120px;
-        overflow: hidden;
-        padding-left: 5px;
-    }
+@media screen and (max-width: 499px){
+    
 }
