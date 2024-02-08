@@ -6,9 +6,10 @@
 }
 body{
     width: 100%;
+    height: 100vh;
     display: flex;
-    background-color: #0F172A;
     color: #fff;
+    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, #0F172A,rgb(16, 57, 122));
 }
 /* --- partie de gauche --- */
 header{
@@ -24,7 +25,7 @@ header h1{
     width: 500px;
 }
 nav{
-    width: 80px;
+    width: 92px;
     text-align: end;
     margin-left: 90%;
     margin-top: 120px;
@@ -33,10 +34,21 @@ nav a{
     margin-bottom: 25px;
     text-decoration: none;
     color: #fff;
+    position: relative;
+    font-size: 1.3rem;
 }
-nav a:hover{
-    color: cadetblue;
-    
+nav a::after {
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px; 
+    background-color: #3498db; 
+    bottom: 0;
+    left: 0; 
+    transition: width 0.3s;
+}
+nav a:hover::after {
+    width: 100%;
 }
 .icon{
     font-size: xx-large;
@@ -142,9 +154,24 @@ span{
     width: 60%;
 }
 article button{
-    height: 30px;
-    width: 100px;
-    border-radius: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 38px;
+    min-width: 96px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+}
+article button:hover {
+    background-color: rgb(71, 82, 196);
 }
 /* --- Contact.php --- */
 .contact{
@@ -241,6 +268,16 @@ input:focus,textarea:focus {
     }
     .contact{
         margin: 15% 0 0 20%;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+    article button{
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
     }
 }
 @media screen and (min-width: 1000px) and (max-width: 1499px){
@@ -377,7 +414,6 @@ input:focus,textarea:focus {
     nav{
         margin: 0 25px 0 40px;
         width: 91%;
-        background-color: #0F172A;
     }
     hr{
         display: none;
