@@ -140,8 +140,8 @@ article div img{
     float: left;
 }
 article div p{
-    max-height: 120px;
-    min-height: 120px;
+    height: 120px;
+    height: 120px;
     overflow: hidden;
     padding-left: 5px;
 }
@@ -527,6 +527,12 @@ input:focus,textarea:focus {
         border-radius: 15px;
         float: left;
     }
+    article div p{
+        height: auto;
+    }
+    article div a{
+        width: 100%;
+    }
     .h2{
         margin: 25px 20% 0 20%;
     }
@@ -576,5 +582,16 @@ input:focus,textarea:focus {
         color: #fff;
         background-color: rgb(88, 101, 242);
         transition: background-color .17s ease,color .17s ease;
+    }
+    .contact{
+        width: calc(100% - 50px);
+        margin: 5% 25px 5% 25px;
+    }
+    form {
+        max-width: 400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
