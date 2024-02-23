@@ -76,7 +76,7 @@
             <?php if (isset($project['codeLink'])) : ?>
                 <a class="suite" href="<?php echo $project['codeLink']; ?>" target="_blank">Lien du code</a>
             <?php endif; ?>
-            <span>Techno utiliser :
+            <span>Techno utilisée :
                 <?php foreach ($project['techno'] as $techno) : ?>
                     <i class="fa-brands fa-<?php echo $techno; ?>"></i>
                 <?php endforeach; ?>
